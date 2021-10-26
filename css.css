@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: system-ui, sans-serif;
+    
+    /* this breaks position sticky in Firefox */
+    /* overflow-x: hidden; */
+  }
+  header {
+    grid-column: 1 / 3;
+    background: 37474F;
+    color: blue;
+    padding: 4rem;
+    text-align: center;
+  }
+.ardli{
+  margin: 100px auto auto auto;
+  width: 15%;
+  border-radius: 100%;
+  
+}
+main{
+    padding: 30px;
+}
+  h1{
+      font-style: Comic Sans MS;
+  }
+  nav {
+    white-space: nowrap;
+    background: #37474F;
+  }
+  nav ul {
+    list-style: none;
+    margin: 30px;
+    padding: 50px;
+  }
+  /* Only stick if you can fit */
+@media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a.current {
+    background: black;
+  }
+  video{
+    margin-top: 20px;
+    padding-right: 10px;
+  }
+  
+  
+  footer {
+    grid-column: 1 / 3;
+    background: #607D8B;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 12;
+   
+
